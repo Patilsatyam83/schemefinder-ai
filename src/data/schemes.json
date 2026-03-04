@@ -1,0 +1,168 @@
+{
+  "schemes": [
+    {
+      "id": "pm-kisan",
+      "title": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)",
+      "ministry": "Ministry of Agriculture & Farmers Welfare",
+      "description": "An initiative by the government of India in which all farmers will get up to ₹6,000 per year as minimum income support.",
+      "sourceUrl": "https://pmkisan.gov.in/",
+      "eligibility": {
+        "occupation": ["Farmer"],
+        "maxLandholdingHectares": 2.0
+      },
+      "benefits": [
+        "₹6,000 per year",
+        "Direct Benefit Transfer (DBT) into bank accounts"
+      ],
+      "lifecycleState": "Active"
+    },
+    {
+      "id": "ayushman-bharat",
+      "title": "Ayushman Bharat Pradhan Mantri Jan Arogya Yojana (PM-JAY)",
+      "ministry": "Ministry of Health and Family Welfare",
+      "description": "Providing health cover of ₹5 lakhs per family per year for secondary and tertiary care hospitalization to poor and vulnerable families.",
+      "sourceUrl": "https://pmjay.gov.in/",
+      "eligibility": {
+        "socialCategory": ["BPL", "SC", "ST"]
+      },
+      "benefits": [
+        "Health cover up to ₹5,00,000 per family per year",
+        "Cashless access to health care services for the beneficiary at the point of service"
+      ],
+      "lifecycleState": "Active"
+    },
+    {
+      "id": "pm-egp",
+      "title": "Prime Minister's Employment Generation Programme (PMEGP)",
+      "ministry": "Ministry of Micro, Small and Medium Enterprises",
+      "description": "Credit-linked subsidy scheme aimed at generating self-employment opportunities through establishment of micro-enterprises.",
+      "sourceUrl": "https://www.kviconline.gov.in/pmegpeportal",
+      "eligibility": {
+        "minAge": 18,
+        "occupation": ["Unemployed", "Self-Employed", "MSME"]
+      },
+      "benefits": [
+        "Margin Money subsidy of 15% to 35% of project cost",
+        "Bank loan of 90% to 95% of the project cost"
+      ],
+      "lifecycleState": "Active"
+    },
+    {
+       "id": "nsigse",
+       "title": "National Scheme of Incentive to Girls for Secondary Education",
+       "ministry": "Department of School Education & Literacy",
+       "description": "To promote enrollment of girl child in the age group of 14-18 at secondary stage, especially those who passed Class VIII.",
+       "sourceUrl": "https://dsel.education.gov.in/scheme/nsigse",
+       "eligibility": {
+          "gender": "Female",
+          "socialCategory": ["SC", "ST"],
+          "minAge": 14,
+          "maxAge": 18,
+          "occupation": ["Student"]
+       },
+       "benefits": [
+         "Sum of ₹3000 deposited as fixed deposit",
+         "Withdrawal allowed upon reaching 18 years of age and passing 10th class."
+       ],
+       "lifecycleState": "Active"
+    },
+    {
+       "id": "stand-up-india",
+       "title": "Stand-up India Scheme",
+       "ministry": "Department of Financial Services",
+       "description": "Facilitate bank loans between ₹10 lakh and ₹1 Crore to at least one SC/ST borrower and one woman borrower per bank branch for setting up a greenfield enterprise.",
+       "sourceUrl": "https://www.standupmitra.in/",
+       "eligibility": {
+          "minAge": 18,
+          "socialCategory": ["SC", "ST"],
+          "gender": "Female",
+          "occupation": ["Self-Employed", "Unemployed"]
+       },
+       "benefits": [
+         "Bank loan between ₹10 lakh and ₹1 Crore"
+       ],
+       "lifecycleState": "Active"
+    },
+    {
+       "id": "pm-svanidhi",
+       "title": "PM Street Vendor's AtmaNirbhar Nidhi (PM SVANidhi)",
+       "ministry": "Ministry of Housing & Urban Affairs",
+       "description": "A special micro-credit facility to provide affordable loans to street vendors.",
+       "sourceUrl": "https://pmsvanidhi.mohua.gov.in/",
+       "eligibility": {
+          "occupation": ["Self-Employed"]
+       },
+       "benefits": [
+         "Working capital loan up to ₹10,000",
+         "Interest subsidy of 7% per annum on regular repayment",
+         "Incentives on digital transactions"
+       ],
+       "lifecycleState": "Active"
+    },
+    {
+       "id": "pmy",
+       "title": "Pradhan Mantri Awas Yojana (PMAY-U)",
+       "ministry": "Ministry of Housing & Urban Affairs",
+       "description": "Provides central assistance to implementing agencies through States/UTs to provide houses to all eligible families against the validated demand.",
+       "sourceUrl": "https://pmaymis.gov.in/",
+       "eligibility": {
+          "maxIncomeMonthly": 50000,
+          "socialCategory": ["BPL", "EWS", "LIG"]
+       },
+       "benefits": [
+         "Subsidized housing loans",
+         "Direct financial assistance for house construction"
+       ],
+       "lifecycleState": "Active"
+    },
+    {
+       "id": "digital-india-internship",
+       "title": "Digital India Internship Scheme",
+       "ministry": "Ministry of Electronics & Information Technology",
+       "description": "Opportunity for students to secure practical experience related to Ministry’s activities.",
+       "sourceUrl": "https://www.meity.gov.in/internship-scheme",
+       "eligibility": {
+          "occupation": ["Student"]
+       },
+       "benefits": [
+         "Stipend of ₹10,000 per month",
+         "Certificate of Internship"
+       ],
+       "lifecycleState": "Active"
+    },
+    {
+       "id": "pm-uby",
+       "title": "Upcoming: PM Universal Basic Youth Income",
+       "ministry": "Ministry of Finance",
+       "description": "OVERVIEW: This is a proposed scheme currently under discussion by the government. It aims to provide a baseline digital allowance to all qualifying students to support digital learning access. *NOTE: This scheme is not yet approved and is purely under parliament discussion.*",
+       "sourceUrl": "https://pib.gov.in/",
+       "eligibility": {
+          "occupation": ["Student"],
+          "minAge": 16,
+          "maxAge": 24,
+          "maxIncomeMonthly": 15000
+       },
+       "benefits": [
+         "Proposed ₹1,500 monthly digital stipend",
+         "Free baseline 5G internet data tier (Proposed)"
+       ],
+       "lifecycleState": "Upcoming"
+    },
+    {
+       "id": "national-agri-drone",
+       "title": "Upcoming: National Agri-Drone Subsidy Initiative",
+       "ministry": "Ministry of Agriculture & Farmers Welfare",
+       "description": "OVERVIEW: Under discussion phase by the cabinet. This scheme aims to subsidize drone purchases for farmers to modernize pesticide administration and crop monitoring. *NOTE: This scheme is primarily in discussion phase, await final cabinet approval notification.*",
+       "sourceUrl": "https://agricoop.nic.in/",
+       "eligibility": {
+          "occupation": ["Farmer"],
+          "maxLandholdingHectares": 10.0
+       },
+       "benefits": [
+         "Proposed 50% subsidy on agricultural drone purchases",
+         "Free drone piloting certification training"
+       ],
+       "lifecycleState": "Upcoming"
+    }
+  ]
+}
