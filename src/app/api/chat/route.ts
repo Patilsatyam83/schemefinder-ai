@@ -1,10 +1,6 @@
 import { NextResponse } from 'next/server';
 import { GoogleGenAI } from '@google/genai';
 
-const ai = new GoogleGenAI({
-  apiKey: process.env.GEMINI_API_KEY || ''
-});
-
 export async function POST(request: Request) {
   try {
     const { message, history } = await request.json();
@@ -28,6 +24,7 @@ export async function POST(request: Request) {
 
     conversationContext += `\nUser's new message: ${message}`;
 
+    const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
     const response = await ai.models.generateContent({
         model: 'gemini-2.5-flash',
         contents: conversationContext,

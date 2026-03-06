@@ -3,11 +3,6 @@ import { UserProfile, Scheme } from '../../../types';
 import { rankSchemes } from '../../../lib/eligibilityEngine';
 import schemesData from '../../../data/schemes.json';
 import { GoogleGenAI } from '@google/genai';
-
-const ai = new GoogleGenAI({
-  apiKey: process.env.GEMINI_API_KEY || ''
-});
-
 // A hybrid architecture: Discovery via LLM -> Verification via Deterministic Engine
 export async function POST(request: Request) {
   try {
@@ -22,6 +17,7 @@ export async function POST(request: Request) {
     // If Gemini is configured, use it for real-time DISCOVERY
     if (process.env.GEMINI_API_KEY) {
         try {
+            const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
             const prompt = `
 You are a highly accurate Indian Government Scheme discovery engine.
 Find 3-5 real, currently active Indian government schemes that perfectly match this user profile:
