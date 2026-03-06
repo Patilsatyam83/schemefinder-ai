@@ -1,3 +1,14 @@
+---
+title: SchemeFinder AI
+emoji: 🔍
+colorFrom: blue
+colorTo: indigo
+sdk: docker
+app_port: 7860
+pinned: true
+license: mit
+---
+
 # SchemeFinder AI 🏛️
 
 A government-grade, AI-assisted platform ensuring zero-hallucination scheme discovery and deterministic eligibility verification for Indian Citizens. Built for the AI for Bharat Hackathon.
