@@ -20,36 +20,56 @@ Many citizens struggle to find government schemes they are eligible for. Existin
 ## 🚀 How to Run Locally
 
 ### Prerequisites
-- Node.js (v18 or higher)
-- npm or yarn
-- Google Gemini API Key
+- [Node.js v18+](https://nodejs.org/) — verify with `node -v`
+- npm (comes with Node.js)
+- A [Google Gemini API Key](https://aistudio.google.com/app/apikey) (free)
 
 ### Installation Steps
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/priyankakedare/SchemeFinder-AI.git
-   cd schemefinder-ai
+   git clone https://github.com/Patilsatyam83/schemefinder-ai.git
    ```
 
-2. **Install Dependencies**
+2. **Navigate into the project folder**
+   ```bash
+   cd scheme-finder
+   ```
+   > ⚠️ **Important**: The project folder is called `scheme-finder`, NOT `schemefinder-ai`. Running `npm` commands outside this folder will cause a `package.json not found` error.
+
+3. **Install dependencies**
    ```bash
    npm install
    ```
 
-3. **Set up Environment Variables**
-   Create a file named `.env.local` in the root directory and add your Google Gemini API Key:
+4. **Create the environment file**
+
+   In the `scheme-finder` folder, create a new file named exactly `.env.local` and add:
    ```env
    GEMINI_API_KEY=your_actual_api_key_here
    ```
+   Replace `your_actual_api_key_here` with your real Gemini API key from [Google AI Studio](https://aistudio.google.com/app/apikey).
 
-4. **Start the Development Server**
+   > 💡 **Windows users**: Use VS Code to create `.env.local` — Windows Explorer may block filenames that start with a dot.
+
+5. **Start the development server**
    ```bash
    npm run dev
    ```
 
-5. **View the Application**
-   Open your browser and navigate to `http://localhost:3000`
+6. **Open in browser**
+
+   Navigate to [http://localhost:3000](http://localhost:3000)
+
+---
+
+### ❓ Troubleshooting
+
+| Error | Fix |
+|---|---|
+| `Cannot find package.json` | Make sure you are inside the `scheme-finder` folder, not the root or `schemefinder-ai` |
+| `GEMINI_API_KEY is not defined` | Ensure `.env.local` exists in the `scheme-finder` folder with your key |
+| Port 3000 in use | Run `npm run dev -- -p 3001` to use a different port |
 
 ---
 

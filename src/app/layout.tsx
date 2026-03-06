@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import './globals.css'
 import Chatbot from '../components/Chatbot'
 
@@ -22,7 +23,7 @@ export default function RootLayout({
            <header style={{ backgroundColor: 'var(--primary)', color: 'white', padding: '16px 0', borderBottom: '4px solid var(--secondary)' }}>
               <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                     <img src="/logo.png" alt="SchemeFinder AI Logo" style={{ width: '48px', height: '48px', borderRadius: '50%', objectFit: 'cover', border: '2px solid white' }} />
+                     <Image src="/logo.png" alt="SchemeFinder AI Logo" width={48} height={48} style={{ borderRadius: '50%', objectFit: 'cover', border: '2px solid white' }} priority />
                      <div>
                         <h1 style={{ color: 'white', margin: 0, fontSize: '1.5rem', letterSpacing: '0.5px' }}>SchemeFinder AI</h1>
                         <p style={{ margin: 0, fontSize: '0.8rem', opacity: 0.9 }}>Government of India Initiative</p>
