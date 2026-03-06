@@ -26,6 +26,10 @@ COPY . .
 # Uncomment the following line in case you want to disable telemetry during the build.
 ENV NEXT_TELEMETRY_DISABLED 1
 
+# Accept GEMINI_API_KEY at build time so Next.js API routes can use it
+ARG GEMINI_API_KEY
+ENV GEMINI_API_KEY=$GEMINI_API_KEY
+
 RUN yarn build || npm run build
 
 # Production image, copy all the files and run next
@@ -52,10 +56,11 @@ COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
 USER nextjs
 
-EXPOSE 3000
+# Hugging Face Spaces requires port 7860
+EXPOSE 7860
 
-ENV PORT 3000
+ENV PORT 7860
 # set hostname to localhost
 ENV HOSTNAME "0.0.0.0"
 
-CMD ["node", "server.js"]
+CMD ["node", "server.js", "-p", "7860"]
